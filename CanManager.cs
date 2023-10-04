@@ -59,7 +59,7 @@ namespace KVSR_Console_framework_4p7p2
 
         public void SendMessage(int id, byte[] message)
         {
-            var status = Canlib.canWrite(handle, id, message, 8, 0);
+            var status = Canlib.canWrite(handle, id, message, 8, 4);
             CheckStatus(status, "canWrite");
         }
 
